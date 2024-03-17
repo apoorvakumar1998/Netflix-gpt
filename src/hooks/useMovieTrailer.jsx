@@ -1,13 +1,12 @@
 
 
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { API_OPTIONS } from '../utils/constants'
 import { useDispatch } from 'react-redux';
 import { addTrailerVideo } from '../utils/moviesSlice';
 
 const useMovieTrailer = (movieId) => {
   const dispatch = useDispatch();
-
 
   const getMovieVideos = async () => {
     const data = await fetch('https://api.themoviedb.org/3/movie/' + movieId + '/videos?language=en-US', API_OPTIONS);
@@ -19,7 +18,8 @@ const useMovieTrailer = (movieId) => {
 
   useEffect(() => {
     getMovieVideos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 }
 
-export default useMovieTrailer
+export default useMovieTrailer;
