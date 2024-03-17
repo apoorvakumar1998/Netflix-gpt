@@ -42,7 +42,10 @@ const Header = () => {
         userData && (
           <div className='flex gap-4 items-center'>
             <img alt="user logo" className='w-12 h-12' src={USER_LOGO} />
-            <div className='text-white font-bold cursor-pointer' onClick={handleSignOut}>signout</div>
+            <button
+              onClick={handleSignOut}
+              className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-opacity-50"
+            >Sign Out</button>
           </div>
         )
       }
