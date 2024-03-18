@@ -9,11 +9,13 @@ const MovieList = ({ title, movies }) => {
       <div className='flex overflow-x-scroll flex-nowrap'>
         <div className='flex items-center gap-4'>
           {
-            movies?.map(movie =>
-              <MovieCard
-                key={movie.id}
-                posterPath={movie.poster_path}
-              />)
+            movies?.map(movie => {
+              return movie.poster_path &&
+                <MovieCard
+                  key={movie.id}
+                  posterPath={movie.poster_path}
+                />
+            })
           }
         </div>
       </div>
