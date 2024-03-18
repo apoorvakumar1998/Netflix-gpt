@@ -42,11 +42,11 @@ const Header = () => {
     });
   }
   return (
-    <div className='absolute w-screen bg-gradient-to-b from-black px-4 py-2 z-10 flex justify-between'>
-      <img className='w-40' alt="logo" src={LOGO_URL} />
+    <div className='absolute w-screen bg-gradient-to-b from-black px-4 py-2 z-10 flex justify-between flex-col md:flex-row'>
+      <img className='w-40 mx-auto md:mx-0' alt="logo" src={LOGO_URL} />
       {
         userData && (
-          <div className='flex gap-4 items-center'>
+          <div className='flex gap-4 items-center justify-center'>
             <button
               onClick={handleGptSearchClick}
               className="bg-violet-600 hover:bg-violet-800 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-violet-600 focus:ring-opacity-50"

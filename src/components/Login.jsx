@@ -65,7 +65,7 @@ const Login = () => {
     <div className="min-h-screen">
       <Header />
       <div className="absolute">
-        <img alt="background" src={BG_URL} />
+        <img className='h-screen object-cover md:h-auto' alt="background" src={BG_URL} />
       </div>
 
       <div className="flex items-center justify-center min-h-screen">

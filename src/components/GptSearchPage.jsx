@@ -16,7 +16,7 @@ const GptSearchPage = () => {
   return (
     <div>
       <div className="fixed -z-10 opacity-50">
-        <img alt="background" src={BG_URL} />
+        <img className='h-screen md:h-auto object-cover' alt="background" src={BG_URL} />
       </div>
       <GptSearchBar />
       <GptSuggestions />

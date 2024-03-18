@@ -29,8 +29,8 @@ const GptSearchBar = () => {
   }
 
   return (
-    <div className='pt-[10%] flex items-center justify-center'>
-      <form className='w-1/2 p-4 flex gap-2' onClick={(e) => e.preventDefault()}>
+    <div className='pt-[40%] md:pt-[10%] flex items-center justify-center'>
+      <form className='w-full md:w-1/2 p-4 flex gap-2' onClick={(e) => e.preventDefault()}>
         <input type='text' placeholder='Search Movies' ref={searchText}
           className='rounded-lg px-4 py-2 bg-white w-3/4'>
         </input>
